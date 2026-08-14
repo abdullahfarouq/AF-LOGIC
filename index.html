@@ -26,18 +26,17 @@
 }
 
 *{box-sizing:border-box}
-html{background:var(--bg);scroll-behavior:auto;overflow-x:hidden;overflow-y:auto;-webkit-text-size-adjust:100%}
+html{background:var(--bg);scroll-behavior:auto;overflow-x:hidden;overflow-y:auto}
 body{
   margin:0;
   background:var(--bg);
   color:var(--fg);
   font-family:var(--body);
   overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
   overflow-y:auto;
-  min-height:100%;
-  -webkit-overflow-scrolling:touch;
-  overscroll-behavior-y:auto;
-  -webkit-font-smoothing:antialiased
+  overscroll-behavior-y:none;
+  touch-action:pan-y;
 }
 body[dir="rtl"]{font-family:var(--arabic)}
 button,input{font:inherit}
@@ -63,7 +62,8 @@ a{color:inherit;text-decoration:none}
   inset:0;
   width:100%;
   height:100%;
-  touch-action:none;
+  touch-action:auto;
+  pointer-events:none;
   cursor:none
 }
 
@@ -626,7 +626,6 @@ a{color:inherit;text-decoration:none}
 }
 
 .modal.open{display:flex}
-html.modal-open,body.modal-open{overflow:hidden!important;overscroll-behavior:none}
 
 .panel{
   width:min(920px,96vw);
@@ -755,39 +754,6 @@ html.modal-open,body.modal-open{overflow:hidden!important;overscroll-behavior:no
   }
 }
 
-@media (hover:none), (pointer:coarse){
-  #space{cursor:default;touch-action:auto}
-  .cursor,.cursor-dot,.cursor-label{display:none!important}
-  .card:hover{transform:none;box-shadow:none}
-  .card:before{display:none}
-  .cta:hover{transform:none}
-}
-
-@media(max-width:560px){
-  html,body{overflow-x:hidden;overflow-y:auto;min-height:100%;height:auto}
-  body{touch-action:pan-y}
-  .story{height:900vh;min-height:9000px}
-  .sticky{height:100svh;min-height:560px}
-  #space{touch-action:auto}
-  .nav{height:64px}
-  .nav-right{gap:7px}
-  .brand{font-size:15px}
-  .lang button{padding:6px 8px}
-  .slide{padding:0 16px}
-  .sub{max-width:92vw;font-size:7px;line-height:1.75}
-  .meta{display:none}
-  .rail{display:none}
-  .counter{right:12px;top:74px}
-  .hint{bottom:14px;max-width:82vw;text-align:center;white-space:normal;line-height:1.5}
-  .gallery{padding-bottom:70px}
-  .gallery-head{position:sticky;top:0}
-  .filters{padding-bottom:2px;touch-action:pan-x}
-  .card{cursor:pointer}
-  .thumb{height:205px}
-  .modal{padding:10px;align-items:flex-start;padding-top:14px}
-  .panel{width:100%;max-height:calc(100svh - 28px);padding:20px 16px;border-radius:12px}
-}
-
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{
     scroll-behavior:auto!important;
@@ -892,7 +858,7 @@ html.modal-open,body.modal-open{overflow:hidden!important;overscroll-behavior:no
   <div class="title">PharmaOS</div>
 
   <div class="project-shot" id="pharmaShot">
-    <img src="project-chart.jpg" alt="PharmaOS dashboard" onerror="this.style.display='none'">
+    <img src="project-chart.jpg" alt="PharmaOS dashboard">
   </div>
 
   <div class="sub" data-key="s6" style="z-index:7">
@@ -1316,6 +1282,7 @@ fp:"لديك فكرة لنظام؟<br>لنحوّل سير العمل إلى من
 };
 
 let lang=localStorage.getItem("aflogic-lang")||"en";
+let previousBodyOverflow = "";
 
 function setLang(l){
 
@@ -1448,7 +1415,8 @@ addEventListener("mouseleave",()=>{
   mouseActive=false
 });
 
-canvas.addEventListener("pointerdown",e=>{
+addEventListener("pointerdown",e=>{
+  if(e.target.closest && e.target.closest("button,a,input,.panel,.filters,.card")) return;
 
   const x=e.clientX;
   const y=e.clientY;
@@ -1706,6 +1674,10 @@ function drawSpace(p){
   ctx.globalCompositeOperation="source-over";
 }
 
+// Keep native wheel, trackpad and touch scrolling completely passive.
+addEventListener("wheel", ()=>{}, {passive:true});
+addEventListener("touchmove", ()=>{}, {passive:true});
+
 function storyProgress(){
 
   const r=story.getBoundingClientRect();
@@ -1744,6 +1716,7 @@ function applyStory(){
     const v=Math.min(fi,fo);
 
     s.style.opacity=v;
+    s.style.pointerEvents = v > .5 ? "auto" : "none";
 
     s.style.transform=
       `translate3d(0,${(1-v)*28}px,0) scale(${.975+.025*v})`;
@@ -2015,8 +1988,8 @@ function openProject(n){
     .getElementById("modal")
     .classList.add("open");
 
-  document.documentElement.classList.add("modal-open");
-  document.body.classList.add("modal-open");
+  previousBodyOverflow = document.body.style.overflow;
+  document.body.style.overflow="hidden";
 }
 
 function closeModal(){
@@ -2025,8 +1998,7 @@ function closeModal(){
     .getElementById("modal")
     .classList.remove("open");
 
-  document.documentElement.classList.remove("modal-open");
-  document.body.classList.remove("modal-open");
+  document.body.style.overflow=previousBodyOverflow;
 }
 
 document
@@ -2061,12 +2033,6 @@ if("ontouchstart" in window){
     .getElementById("cursorLabel")
     .style.display="none";
 }
-
-
-// Keep the animated scene responsive after tab switching / mobile browser suspension.
-document.addEventListener("visibilitychange",()=>{
-  if(!document.hidden){resize();loop()}
-});
 
 </script>
 
