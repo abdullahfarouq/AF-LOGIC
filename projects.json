@@ -1,0 +1,1032 @@
+{
+  "brand": {
+    "name": "AF LOGIC",
+    "tagline": "SIMPLY BETTER LOGIC",
+    "owner": "Abdullah Farouq",
+    "email": "aflogic.ai@gmail.com",
+    "whatsapp": "+201061947000"
+  },
+  "portfolio_note": "Projects are demo concepts, replicas or systems under development unless explicitly marked otherwise.",
+  "projects": [
+    {
+      "id": "AF-001",
+      "name": "PharmaOS",
+      "category": "Pharmacy & Healthcare",
+      "description": "Multi-branch pharmacy management platform",
+      "features": [
+        "Multi-branch control",
+        "POS & sales",
+        "Batch / expiry tracking",
+        "Purchasing & suppliers",
+        "Stock transfers",
+        "Profit & margin analytics"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": true
+    },
+    {
+      "id": "AF-002",
+      "name": "PharmaFlow",
+      "category": "Pharmacy & Healthcare",
+      "description": "Prescription and dispensing workflow",
+      "features": [
+        "Prescription intake",
+        "Dispensing queue",
+        "Patient records",
+        "Pharmacist workflow",
+        "Refill reminders",
+        "Audit history"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": true
+    },
+    {
+      "id": "AF-003",
+      "name": "MediStock AI",
+      "category": "Pharmacy & Healthcare",
+      "description": "Expiry-aware medical inventory intelligence",
+      "features": [
+        "Expiry alerts",
+        "Demand forecasting",
+        "Reorder suggestions",
+        "Dead-stock detection",
+        "Batch analytics",
+        "AI insights"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": true
+    },
+    {
+      "id": "AF-004",
+      "name": "ClinicOps",
+      "category": "Pharmacy & Healthcare",
+      "description": "Clinic operations and appointment management",
+      "features": [
+        "Appointments",
+        "Doctors & staff",
+        "Patient queue",
+        "Billing",
+        "Notifications",
+        "Daily operations dashboard"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": true
+    },
+    {
+      "id": "AF-005",
+      "name": "Medical Supply Hub",
+      "category": "Pharmacy & Healthcare",
+      "description": "B2B medical supplies ordering platform",
+      "features": [
+        "Supplier catalog",
+        "Purchase requests",
+        "Approval workflow",
+        "Order tracking",
+        "Stock visibility",
+        "Account management"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": true
+    },
+    {
+      "id": "AF-006",
+      "name": "RxVault",
+      "category": "Pharmacy & Healthcare",
+      "description": "Secure prescription and patient document vault",
+      "features": [
+        "Secure documents",
+        "Prescription history",
+        "Access control",
+        "Search",
+        "Audit log",
+        "Export"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": true
+    },
+    {
+      "id": "AF-007",
+      "name": "CareDesk",
+      "category": "Pharmacy & Healthcare",
+      "description": "Healthcare CRM and communication center",
+      "features": [
+        "Patient CRM",
+        "Follow-ups",
+        "Tasks",
+        "Templates",
+        "Communication history",
+        "Service analytics"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": true
+    },
+    {
+      "id": "AF-008",
+      "name": "Pharma Analytics",
+      "category": "Pharmacy & Healthcare",
+      "description": "Branch, margin and inventory analytics",
+      "features": [
+        "Branch comparison",
+        "Sales KPIs",
+        "Margins",
+        "Inventory health",
+        "Top / slow movers",
+        "Scheduled reports"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": true
+    },
+    {
+      "id": "AF-009",
+      "name": "Yard Command",
+      "category": "Operations & Logistics",
+      "description": "Yard operations command center",
+      "features": [
+        "Live operational board",
+        "Task allocation",
+        "Asset status",
+        "Exception queue",
+        "Shift overview",
+        "KPI wall"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": true
+    },
+    {
+      "id": "AF-010",
+      "name": "FleetLogic",
+      "category": "Operations & Logistics",
+      "description": "Fleet tracking and maintenance platform",
+      "features": [
+        "Vehicle registry",
+        "Maintenance plans",
+        "Service history",
+        "Fuel tracking",
+        "Driver assignment",
+        "Cost analytics"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": true
+    },
+    {
+      "id": "AF-011",
+      "name": "ContainerFlow",
+      "category": "Operations & Logistics",
+      "description": "Container movement and status control",
+      "features": [
+        "Container lifecycle",
+        "Movement events",
+        "Location status",
+        "Exception alerts",
+        "Search",
+        "Operational reports"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": true
+    },
+    {
+      "id": "AF-012",
+      "name": "WarehouseOS",
+      "category": "Operations & Logistics",
+      "description": "Warehouse inventory and task management",
+      "features": [
+        "Locations",
+        "Put-away",
+        "Picking",
+        "Cycle counts",
+        "Stock transfers",
+        "Performance KPIs"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": true
+    },
+    {
+      "id": "AF-013",
+      "name": "DockFlow",
+      "category": "Operations & Logistics",
+      "description": "Dock scheduling and resource planning",
+      "features": [
+        "Dock calendar",
+        "Slot booking",
+        "Resource planning",
+        "Conflict detection",
+        "Shift planning",
+        "Utilization analytics"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-014",
+      "name": "RoutePilot",
+      "category": "Operations & Logistics",
+      "description": "Route planning and dispatch automation",
+      "features": [
+        "Order grouping",
+        "Route planning",
+        "Driver dispatch",
+        "ETA tracking",
+        "Exceptions",
+        "Delivery KPIs"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-015",
+      "name": "AssetTrack",
+      "category": "Operations & Logistics",
+      "description": "Asset lifecycle and inspection management",
+      "features": [
+        "Asset registry",
+        "Inspections",
+        "Maintenance",
+        "Ownership",
+        "Condition scoring",
+        "Audit history"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-016",
+      "name": "BizCore",
+      "category": "Business Management",
+      "description": "Business management suite for SMEs",
+      "features": [
+        "Company dashboard",
+        "Customers",
+        "Products & services",
+        "Tasks",
+        "Invoices",
+        "Reports"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-017",
+      "name": "BranchMaster",
+      "category": "Business Management",
+      "description": "Multi-branch business administration",
+      "features": [
+        "Branches",
+        "Users & roles",
+        "Inter-branch activity",
+        "Central settings",
+        "Performance KPIs",
+        "Consolidated reports"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-018",
+      "name": "ProcureX",
+      "category": "Business Management",
+      "description": "Procurement and supplier management",
+      "features": [
+        "RFQs",
+        "Supplier scoring",
+        "Purchase orders",
+        "Approvals",
+        "Receiving",
+        "Spend analytics"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-019",
+      "name": "ContractHub",
+      "category": "Business Management",
+      "description": "Contract lifecycle management",
+      "features": [
+        "Contract registry",
+        "Renewals",
+        "Approvals",
+        "Documents",
+        "Alerts",
+        "Contract analytics"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-020",
+      "name": "ServiceDesk Pro",
+      "category": "Business Management",
+      "description": "Service requests and SLA management",
+      "features": [
+        "Ticketing",
+        "SLA timers",
+        "Assignment",
+        "Escalation",
+        "Knowledge base",
+        "Service analytics"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-021",
+      "name": "ProjectForge",
+      "category": "Business Management",
+      "description": "Project portfolio and delivery management",
+      "features": [
+        "Projects",
+        "Milestones",
+        "Tasks",
+        "Risks",
+        "Team workload",
+        "Portfolio dashboard"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-022",
+      "name": "OpsBoard",
+      "category": "Business Management",
+      "description": "Executive operations dashboard",
+      "features": [
+        "KPI cards",
+        "Trend charts",
+        "Exceptions",
+        "Branch comparison",
+        "Drill-downs",
+        "Scheduled reports"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-023",
+      "name": "SmartForms",
+      "category": "Business Management",
+      "description": "Workflow-driven digital forms platform",
+      "features": [
+        "Form builder",
+        "Conditional logic",
+        "Approvals",
+        "Attachments",
+        "Audit trail",
+        "Exports"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-024",
+      "name": "AF Agent Hub",
+      "category": "AI & Automation",
+      "description": "AI agent orchestration workspace",
+      "features": [
+        "Agent registry",
+        "Tool permissions",
+        "Prompt versions",
+        "Run history",
+        "Human approval",
+        "Usage analytics"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-025",
+      "name": "DocuMind",
+      "category": "AI & Automation",
+      "description": "AI document extraction and classification",
+      "features": [
+        "OCR pipeline",
+        "Field extraction",
+        "Classification",
+        "Validation queue",
+        "Search",
+        "Export/API"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-026",
+      "name": "SupportPilot",
+      "category": "AI & Automation",
+      "description": "AI customer support copilot",
+      "features": [
+        "Conversation assistant",
+        "Suggested replies",
+        "Knowledge search",
+        "Escalation",
+        "Conversation summary",
+        "Quality analytics"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-027",
+      "name": "RAG Vault",
+      "category": "AI & Automation",
+      "description": "Private knowledge assistant with RAG",
+      "features": [
+        "Document ingestion",
+        "Embeddings",
+        "Source citations",
+        "Access control",
+        "Conversation history",
+        "Admin controls"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-028",
+      "name": "VoiceDesk AI",
+      "category": "AI & Automation",
+      "description": "Voice-to-workflow business assistant",
+      "features": [
+        "Speech input",
+        "Intent detection",
+        "Action routing",
+        "Confirmation step",
+        "Call notes",
+        "Activity log"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-029",
+      "name": "InvoiceVision",
+      "category": "AI & Automation",
+      "description": "AI invoice extraction and validation",
+      "features": [
+        "Invoice OCR",
+        "Vendor detection",
+        "Line-item extraction",
+        "Duplicate checks",
+        "Approval queue",
+        "Accounting export"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-030",
+      "name": "MeetingMind",
+      "category": "AI & Automation",
+      "description": "Meeting transcription and action extraction",
+      "features": [
+        "Transcription",
+        "Summaries",
+        "Action items",
+        "Owners & due dates",
+        "Search",
+        "Meeting archive"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-031",
+      "name": "Forecast AI",
+      "category": "AI & Automation",
+      "description": "Predictive demand and operations insights",
+      "features": [
+        "Forecasting",
+        "Scenario view",
+        "Confidence bands",
+        "Anomaly detection",
+        "Recommendations",
+        "Model monitoring"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-032",
+      "name": "LedgerFlow",
+      "category": "Finance & Accounting",
+      "description": "Expense, revenue and ledger management",
+      "features": [
+        "Transactions",
+        "Accounts",
+        "Categories",
+        "Reconciliation",
+        "Reports",
+        "Audit trail"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-033",
+      "name": "CashPulse",
+      "category": "Finance & Accounting",
+      "description": "Cash-flow monitoring dashboard",
+      "features": [
+        "Cash position",
+        "Receivables",
+        "Payables",
+        "Forecast",
+        "Alerts",
+        "Trend analytics"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-034",
+      "name": "InvoiceCore",
+      "category": "Finance & Accounting",
+      "description": "Invoicing and payment tracking",
+      "features": [
+        "Invoices",
+        "Customers",
+        "Payments",
+        "Overdue alerts",
+        "PDF export",
+        "Receivables dashboard"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-035",
+      "name": "BudgetPilot",
+      "category": "Finance & Accounting",
+      "description": "Department budget planning and control",
+      "features": [
+        "Budgets",
+        "Approvals",
+        "Actual vs plan",
+        "Variance alerts",
+        "Department views",
+        "Exports"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-036",
+      "name": "ExpenseIQ",
+      "category": "Finance & Accounting",
+      "description": "Expense policy and anomaly detection",
+      "features": [
+        "Expense capture",
+        "Policy rules",
+        "Approval flow",
+        "Anomaly flags",
+        "Reports",
+        "Employee analytics"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-037",
+      "name": "PeopleOS",
+      "category": "HR & Workforce",
+      "description": "Employee lifecycle management",
+      "features": [
+        "Employee records",
+        "Onboarding",
+        "Documents",
+        "Roles",
+        "Offboarding",
+        "HR dashboard"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-038",
+      "name": "ShiftMaster",
+      "category": "HR & Workforce",
+      "description": "Roster and shift planning",
+      "features": [
+        "Shift templates",
+        "Availability",
+        "Assignments",
+        "Coverage alerts",
+        "Swap requests",
+        "Roster analytics"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-039",
+      "name": "LeaveFlow",
+      "category": "HR & Workforce",
+      "description": "Leave, attendance and approvals",
+      "features": [
+        "Leave requests",
+        "Balances",
+        "Approvals",
+        "Attendance view",
+        "Policies",
+        "Reports"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-040",
+      "name": "TalentGrid",
+      "category": "HR & Workforce",
+      "description": "Recruitment pipeline and candidate scoring",
+      "features": [
+        "Vacancies",
+        "Candidates",
+        "Stages",
+        "Interview notes",
+        "Scoring",
+        "Hiring analytics"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-041",
+      "name": "Performance360",
+      "category": "HR & Workforce",
+      "description": "Goals, reviews and performance analytics",
+      "features": [
+        "Goals",
+        "Check-ins",
+        "Reviews",
+        "Competencies",
+        "Manager dashboard",
+        "Trend analytics"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-042",
+      "name": "LeadForge",
+      "category": "CRM & Sales",
+      "description": "Lead capture and sales pipeline",
+      "features": [
+        "Lead intake",
+        "Pipeline stages",
+        "Tasks",
+        "Follow-ups",
+        "Conversion metrics",
+        "Sales dashboard"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-043",
+      "name": "Client360",
+      "category": "CRM & Sales",
+      "description": "Customer relationship command center",
+      "features": [
+        "Customer profiles",
+        "Interactions",
+        "Opportunities",
+        "Tasks",
+        "Documents",
+        "Customer analytics"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-044",
+      "name": "QuoteFlow",
+      "category": "CRM & Sales",
+      "description": "Quotation and proposal automation",
+      "features": [
+        "Quote builder",
+        "Templates",
+        "Approval flow",
+        "PDF generation",
+        "Versioning",
+        "Conversion tracking"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-045",
+      "name": "SalesPulse",
+      "category": "CRM & Sales",
+      "description": "Sales performance intelligence",
+      "features": [
+        "Revenue KPIs",
+        "Rep performance",
+        "Pipeline health",
+        "Forecast",
+        "Win/loss analysis",
+        "Alerts"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-046",
+      "name": "Executive Lens",
+      "category": "Analytics & Dashboards",
+      "description": "Real-time executive KPI dashboard",
+      "features": [
+        "KPI builder",
+        "Live cards",
+        "Trend charts",
+        "Drill-down",
+        "Role-based views",
+        "Export"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-047",
+      "name": "DataPulse",
+      "category": "Analytics & Dashboards",
+      "description": "Operational analytics workspace",
+      "features": [
+        "Data connectors",
+        "Filters",
+        "Charts",
+        "Saved views",
+        "Scheduled reports",
+        "Sharing"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-048",
+      "name": "KPI Studio",
+      "category": "Analytics & Dashboards",
+      "description": "Composable KPI and reporting builder",
+      "features": [
+        "Metric definitions",
+        "Formula builder",
+        "Widgets",
+        "Dashboards",
+        "Permissions",
+        "Exports"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-049",
+      "name": "InsightWall",
+      "category": "Analytics & Dashboards",
+      "description": "Large-screen command center",
+      "features": [
+        "Full-screen mode",
+        "Live KPIs",
+        "Alerts",
+        "Auto rotation",
+        "Operational widgets",
+        "Display controls"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-050",
+      "name": "ReportFlow",
+      "category": "Analytics & Dashboards",
+      "description": "Scheduled reporting and distribution",
+      "features": [
+        "Report builder",
+        "Schedules",
+        "Recipients",
+        "PDF/CSV",
+        "Templates",
+        "Delivery history"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-051",
+      "name": "DeployPilot",
+      "category": "Developer & Cloud",
+      "description": "Deployment workflow and release control",
+      "features": [
+        "Environments",
+        "Releases",
+        "Approvals",
+        "Rollback",
+        "Deployment history",
+        "Health checks"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-052",
+      "name": "CloudWatchtower",
+      "category": "Developer & Cloud",
+      "description": "Cloud health and cost dashboard",
+      "features": [
+        "Service health",
+        "Cost overview",
+        "Alerts",
+        "Resource inventory",
+        "Trends",
+        "Role access"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-053",
+      "name": "API Forge",
+      "category": "Developer & Cloud",
+      "description": "API management and testing workspace",
+      "features": [
+        "Collections",
+        "Environment variables",
+        "Auth",
+        "Request history",
+        "Schemas",
+        "Team sharing"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-054",
+      "name": "DevOps Command",
+      "category": "Developer & Cloud",
+      "description": "CI/CD visibility and incident overview",
+      "features": [
+        "Pipelines",
+        "Build status",
+        "Incidents",
+        "Deployments",
+        "Service health",
+        "Activity feed"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-055",
+      "name": "SecureGate",
+      "category": "Developer & Cloud",
+      "description": "Authentication and access-control platform",
+      "features": [
+        "RBAC",
+        "Sessions",
+        "MFA-ready design",
+        "Permissions",
+        "Audit logs",
+        "Admin console"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-056",
+      "name": "Logic Canvas",
+      "category": "Experimental",
+      "description": "Visual business-rule builder",
+      "features": [
+        "Rule blocks",
+        "Conditions",
+        "Actions",
+        "Versioning",
+        "Testing",
+        "Execution log"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-057",
+      "name": "AI Workflow Lab",
+      "category": "Experimental",
+      "description": "Drag-and-drop AI automation studio",
+      "features": [
+        "Visual workflows",
+        "AI nodes",
+        "Triggers",
+        "Approvals",
+        "Run history",
+        "Templates"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-058",
+      "name": "Digital Twin Ops",
+      "category": "Experimental",
+      "description": "Interactive operational simulation",
+      "features": [
+        "Live model",
+        "Scenario controls",
+        "Resource states",
+        "Events",
+        "Simulation KPIs",
+        "Replay"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-059",
+      "name": "Vision Inspector",
+      "category": "Experimental",
+      "description": "Computer-vision inspection demo",
+      "features": [
+        "Image intake",
+        "Detection",
+        "Confidence",
+        "Review queue",
+        "Defect history",
+        "Analytics"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    },
+    {
+      "id": "AF-060",
+      "name": "Knowledge Graph",
+      "category": "Experimental",
+      "description": "Business knowledge graph explorer",
+      "features": [
+        "Entities",
+        "Relationships",
+        "Search",
+        "Graph view",
+        "Access control",
+        "Data import"
+      ],
+      "status": "Demo / In Development",
+      "statusNote": "Concept, replica or demo implementation under development — not presented as a finished client deployment.",
+      "featured": false
+    }
+  ]
+}
