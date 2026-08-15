@@ -976,10 +976,128 @@ html.is-touch .hint{display:none}
     animation-duration:.01ms!important
   }
 }
+
+/* ============================================================
+   AF LOGIC — PREMIUM PORTFOLIO PASS
+   ============================================================ */
+#ambientAudio{display:none}
+
+/* Larger, calmer reading sizes without losing the micro-type character. */
+.kicker{font-size:8px}
+.sub{font-size:10px;line-height:1.85;max-width:720px}
+.meta{font-size:7px}
+.hint{font-size:7px}
+.nav>div:first-child,.nav-right>span{font-size:7px}
+
+.gallery{padding-bottom:130px}
+.gallery-head{min-height:72px}
+.filters button,.search,.contact{font-size:8px}
+.intro p{font-size:10px;line-height:1.9;max-width:520px}
+.disclaimer{font-size:9px;line-height:1.7;padding:15px 17px}
+
+/* Project catalogue: moving tiles instead of static thumbnails. */
+.grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+  perspective:1400px;
+}
+.card{
+  min-height:420px;
+  border-radius:14px;
+  background:linear-gradient(145deg,rgba(13,17,12,.98),rgba(5,7,6,.98));
+  border-color:rgba(255,255,255,.10);
+  box-shadow:0 18px 70px rgba(0,0,0,.24);
+  transform:translate3d(0,0,0) rotateX(0) rotateY(0);
+  animation:tileFloat 7s ease-in-out infinite;
+  animation-delay:calc(var(--tile-delay,0) * -1s);
+}
+.card:nth-child(3n+2){animation-duration:8.5s}
+.card:nth-child(3n+3){animation-duration:9.5s}
+.card:nth-child(5n+2){--tile-delay:1.1}
+.card:nth-child(5n+3){--tile-delay:2.2}
+.card:nth-child(5n+4){--tile-delay:3.3}
+.card:nth-child(5n){--tile-delay:4.4}
+@keyframes tileFloat{0%,100%{transform:translate3d(0,0,0) rotateZ(0)}50%{transform:translate3d(0,-5px,0) rotateZ(.18deg)}}
+.card:hover,.card:focus-visible,.card.is-pressed{
+  animation-play-state:paused;
+  transform:translate3d(0,-12px,0) rotateX(1deg) rotateY(-1deg) scale(1.012);
+  border-color:rgba(202,255,24,.42);
+  box-shadow:0 34px 100px rgba(0,0,0,.58),0 0 45px rgba(202,255,24,.05);
+}
+.card:active{transform:translate3d(0,-5px,0) scale(.992)}
+
+.thumb{
+  height:270px;
+  background:
+    radial-gradient(circle at 50% 45%,rgba(202,255,24,.07),transparent 35%),
+    linear-gradient(145deg,#0d120c,#040604 72%);
+  border-bottom:1px solid rgba(255,255,255,.07);
+}
+.logo-stage{position:absolute;inset:0;display:grid;place-items:center;overflow:hidden}
+.logo-stage:before{
+  content:"";position:absolute;inset:12%;border:1px solid rgba(202,255,24,.07);border-radius:22px;
+  transform:rotate(-4deg) scale(1.02);transition:.7s ease;
+}
+.card:hover .logo-stage:before{transform:rotate(3deg) scale(1.07);border-color:rgba(202,255,24,.18)}
+.logo-orbit{position:absolute;width:180px;height:180px;border:1px solid rgba(202,255,24,.08);border-radius:50%;animation:orbitSpin 14s linear infinite}
+.logo-orbit:after{content:"";position:absolute;width:5px;height:5px;right:-2px;top:50%;border-radius:50%;background:var(--acid);box-shadow:0 0 18px var(--acid)}
+@keyframes orbitSpin{to{transform:rotate(360deg)}}
+.project-logo{position:relative;width:min(78%,250px);height:auto;max-height:220px;object-fit:contain;filter:drop-shadow(0 20px 35px rgba(0,0,0,.55));transition:transform .65s cubic-bezier(.16,1,.3,1),filter .4s ease}
+.card:hover .project-logo{transform:scale(1.06) translateY(-5px);filter:drop-shadow(0 24px 42px rgba(0,0,0,.65)) drop-shadow(0 0 20px rgba(202,255,24,.10))}
+.logo-scan{position:absolute;left:8%;right:8%;height:1px;background:linear-gradient(90deg,transparent,rgba(202,255,24,.5),transparent);top:18%;opacity:.35;animation:scanCard 3.8s ease-in-out infinite}
+@keyframes scanCard{0%,100%{top:18%;opacity:0}35%{opacity:.55}70%{top:82%;opacity:.15}}
+.logo-id,.logo-index{position:absolute;top:15px;font:700 8px var(--mono);letter-spacing:.12em;color:#8e978c}
+.logo-id{left:16px;color:var(--acid)}
+.logo-index{right:16px;color:#5f685f}
+.body{padding:18px 17px 19px}
+.id{font-size:7px;color:#717a70}
+.card h3{font-size:22px;margin:9px 0 7px}
+.card p{font-size:9px;line-height:1.65;min-height:46px;color:#919a90}
+.tag{font-size:7px;padding:6px 8px}
+
+/* Modal becomes a proper project presentation. */
+.modal{padding:18px;background:rgba(0,0,0,.84)}
+.panel{width:min(980px,96vw);padding:34px;max-height:92vh;border-radius:18px}
+.modal-project-visual{height:245px;margin:-34px -34px 28px;background:radial-gradient(circle at 50% 45%,rgba(202,255,24,.08),transparent 40%),linear-gradient(145deg,#0d120c,#040604);border-bottom:1px solid rgba(202,255,24,.14);display:grid;place-items:center;overflow:hidden}
+.modal-logo{width:100%;height:100%;display:grid;place-items:center;position:relative}
+.modal-logo:before{content:"";position:absolute;width:210px;height:210px;border:1px solid rgba(202,255,24,.1);border-radius:50%;animation:orbitSpin 18s linear infinite}
+.modal-logo img{width:min(300px,52vw);height:220px;object-fit:contain;filter:drop-shadow(0 25px 50px rgba(0,0,0,.7))}
+.panel .kicker{font-size:9px;margin-bottom:17px}
+.panel h2{font-size:clamp(44px,6vw,82px);margin-bottom:16px}
+.overview{font-size:10px;line-height:1.9;max-width:780px}
+.feature-title{font-size:9px;margin-top:34px}
+.features{gap:11px;margin-top:12px}
+.feature{font-size:9px;line-height:1.6;padding:14px;border-radius:8px;transition:.25s transform,.25s border-color,.25s background}
+.feature:hover{transform:translateY(-3px);border-color:rgba(202,255,24,.25);background:rgba(202,255,24,.035)}
+.modal-note{font-size:9px;line-height:1.8}
+
+@media(max-width:850px){
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+  .card{min-height:390px}
+  .thumb{height:245px}
+  .intro p{font-size:9px}
+}
+@media(max-width:560px){
+  .sub{font-size:9px}
+  .grid{grid-template-columns:1fr}
+  .card{min-height:390px}
+  .thumb{height:255px}
+  .panel{padding:22px;border-radius:14px}
+  .modal-project-visual{height:205px;margin:-22px -22px 22px}
+  .modal-logo img{height:185px;width:min(260px,70vw)}
+  .overview,.feature,.modal-note{font-size:9px}
+  .features{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  .card,.logo-orbit,.logo-scan,.modal-logo:before{animation:none!important}
+}
+
 </style>
 </head>
 
 <body>
+
+<audio id="ambientAudio" src="assets/aflogic-ambient.mp3" loop preload="auto" playsinline></audio>
 
 <div id="splash">
   <div class="splash-frame">
@@ -1251,6 +1369,10 @@ html.is-touch .hint{display:none}
 
 <button class="close" id="closeBtn" onclick="closeModal()">×</button>
 
+<div class="modal-project-visual">
+  <div class="modal-logo" id="mLogo"></div>
+</div>
+
 <div class="kicker" id="mId"></div>
 
 <h2 id="mTitle"></h2>
@@ -1472,146 +1594,90 @@ fp:"لديك فكرة لنظام؟<br>لنحوّل سير العمل إلى من
 };
 
 /* ============================================================
-   AUDIO ENGINE — fully procedural (Web Audio API), no files
+   AUDIO ENGINE — ambient track + procedural interaction sounds
    ============================================================ */
 const AudioEngine = (() => {
-
-  let ctx=null, master=null, padNodes=[], enabled=false, started=false;
+  let ctx=null, master=null, enabled=true;
+  const ambient=document.getElementById("ambientAudio");
+  ambient.volume=.42;
 
   function ensureCtx(){
     if(ctx) return;
-    ctx = new (window.AudioContext||window.webkitAudioContext)();
-    master = ctx.createGain();
-    master.gain.value = 0;
+    ctx=new (window.AudioContext||window.webkitAudioContext)();
+    master=ctx.createGain();
+    master.gain.value=.7;
     master.connect(ctx.destination);
   }
 
-  function startPad(){
-    if(started) return;
-    started = true;
-
-    const filt = ctx.createBiquadFilter();
-    filt.type = "lowpass";
-    filt.frequency.value = 900;
-    filt.Q.value = .3;
-    filt.connect(master);
-
-    const padGain = ctx.createGain();
-    padGain.gain.value = .16;
-    padGain.connect(filt);
-
-    const freqs = [55, 82.41, 110, 164.81];
-
-    freqs.forEach((f,i)=>{
-      const o = ctx.createOscillator();
-      o.type = "sine";
-      o.frequency.value = f;
-
-      const g = ctx.createGain();
-      g.gain.value = i===0 ? .55 : .22;
-
-      const lfo = ctx.createOscillator();
-      lfo.frequency.value = .04 + i*.015;
-      const lfoGain = ctx.createGain();
-      lfoGain.gain.value = 2.4;
-      lfo.connect(lfoGain).connect(o.frequency);
-      lfo.start();
-
-      o.connect(g).connect(padGain);
-      o.start();
-
-      padNodes.push(o,lfo);
-    });
-
-    // faint high shimmer (very quiet noise bed)
-    const bufSize = ctx.sampleRate * 2;
-    const buffer = ctx.createBuffer(1, bufSize, ctx.sampleRate);
-    const data = buffer.getChannelData(0);
-    for(let i=0;i<bufSize;i++) data[i] = (Math.random()*2-1);
-    const noise = ctx.createBufferSource();
-    noise.buffer = buffer;
-    noise.loop = true;
-    const noiseFilt = ctx.createBiquadFilter();
-    noiseFilt.type = "highpass";
-    noiseFilt.frequency.value = 5200;
-    const noiseGain = ctx.createGain();
-    noiseGain.gain.value = .015;
-    noise.connect(noiseFilt).connect(noiseGain).connect(master);
-    noise.start();
+  async function startAmbient(){
+    if(!enabled) return;
+    try{
+      if(ambient.paused) await ambient.play();
+    }catch(e){}
   }
 
-  function whoosh(){
-    if(!ctx || !enabled) return;
-    const dur = .85;
-    const bufSize = Math.floor(ctx.sampleRate*dur);
-    const buffer = ctx.createBuffer(1,bufSize,ctx.sampleRate);
-    const data = buffer.getChannelData(0);
-    for(let i=0;i<bufSize;i++){
-      data[i] = (Math.random()*2-1) * (1 - i/bufSize);
-    }
-    const src = ctx.createBufferSource();
-    src.buffer = buffer;
-
-    const filt = ctx.createBiquadFilter();
-    filt.type = "bandpass";
-    filt.Q.value = .6;
-    filt.frequency.setValueAtTime(260, ctx.currentTime);
-    filt.frequency.exponentialRampToValueAtTime(2400, ctx.currentTime+dur*.85);
-
-    const g = ctx.createGain();
-    g.gain.setValueAtTime(0, ctx.currentTime);
-    g.gain.linearRampToValueAtTime(.3, ctx.currentTime+.06);
-    g.gain.exponentialRampToValueAtTime(.001, ctx.currentTime+dur);
-
-    src.connect(filt).connect(g).connect(master);
-    src.start();
-    src.stop(ctx.currentTime+dur+.05);
-  }
-
-  function click(freq=880){
-    if(!ctx || !enabled) return;
-    const o = ctx.createOscillator();
-    o.type = "sine";
-    o.frequency.setValueAtTime(freq, ctx.currentTime);
-    o.frequency.exponentialRampToValueAtTime(freq*.82, ctx.currentTime+.09);
-
-    const g = ctx.createGain();
-    g.gain.setValueAtTime(.001, ctx.currentTime);
-    g.gain.linearRampToValueAtTime(.22, ctx.currentTime+.008);
-    g.gain.exponentialRampToValueAtTime(.001, ctx.currentTime+.14);
-
-    o.connect(g).connect(master);
-    o.start();
-    o.stop(ctx.currentTime+.16);
-  }
-
-  function pop(){
-    if(!ctx || !enabled) return;
-    const bufSize = Math.floor(ctx.sampleRate*.06);
-    const buffer = ctx.createBuffer(1,bufSize,ctx.sampleRate);
-    const data = buffer.getChannelData(0);
-    for(let i=0;i<bufSize;i++) data[i]=(Math.random()*2-1)*(1-i/bufSize);
-    const src = ctx.createBufferSource();
-    src.buffer = buffer;
-    const g = ctx.createGain();
-    g.gain.value = .18;
-    src.connect(g).connect(master);
-    src.start();
+  function arm(){
+    ensureCtx();
+    if(ctx.state==="suspended") ctx.resume();
+    startAmbient();
   }
 
   function setEnabled(v){
-    enabled = v;
-    ensureCtx();
-    if(ctx.state === "suspended") ctx.resume();
-    if(v) startPad();
-    const now = ctx.currentTime;
-    master.gain.cancelScheduledValues(now);
-    master.gain.setValueAtTime(master.gain.value, now);
-    master.gain.linearRampToValueAtTime(v ? .55 : 0, now+.5);
+    enabled=!!v;
+    if(enabled){
+      arm();
+    }else{
+      ambient.pause();
+    }
   }
 
-  return { setEnabled, whoosh, click, pop, get enabled(){ return enabled; } };
+  function click(freq=880){
+    if(!enabled) return;
+    arm();
+    const now=ctx.currentTime;
+    const o=ctx.createOscillator();
+    o.type="sine";
+    o.frequency.setValueAtTime(freq,now);
+    o.frequency.exponentialRampToValueAtTime(freq*.78,now+.075);
+    const g=ctx.createGain();
+    g.gain.setValueAtTime(.001,now);
+    g.gain.exponentialRampToValueAtTime(.13,now+.008);
+    g.gain.exponentialRampToValueAtTime(.001,now+.12);
+    o.connect(g).connect(master); o.start(now); o.stop(now+.14);
+  }
 
+  function pop(){
+    if(!enabled) return;
+    arm();
+    const now=ctx.currentTime;
+    const o=ctx.createOscillator(); o.type="triangle";
+    o.frequency.setValueAtTime(180,now);
+    o.frequency.exponentialRampToValueAtTime(620,now+.11);
+    const g=ctx.createGain();
+    g.gain.setValueAtTime(.001,now);
+    g.gain.exponentialRampToValueAtTime(.16,now+.01);
+    g.gain.exponentialRampToValueAtTime(.001,now+.16);
+    o.connect(g).connect(master); o.start(now); o.stop(now+.18);
+  }
+
+  function whoosh(){
+    if(!enabled) return;
+    arm();
+    const dur=.5, len=Math.floor(ctx.sampleRate*dur), buffer=ctx.createBuffer(1,len,ctx.sampleRate);
+    const data=buffer.getChannelData(0);
+    for(let i=0;i<len;i++) data[i]=(Math.random()*2-1)*(1-i/len);
+    const src=ctx.createBufferSource(); src.buffer=buffer;
+    const filt=ctx.createBiquadFilter(); filt.type="bandpass"; filt.Q.value=.7;
+    filt.frequency.setValueAtTime(260,ctx.currentTime);
+    filt.frequency.exponentialRampToValueAtTime(1800,ctx.currentTime+dur*.8);
+    const g=ctx.createGain();
+    g.gain.setValueAtTime(.001,ctx.currentTime);
+    g.gain.linearRampToValueAtTime(.11,ctx.currentTime+.04);
+    g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+dur);
+    src.connect(filt).connect(g).connect(master); src.start(); src.stop(ctx.currentTime+dur+.02);
+  }
+
+  return {setEnabled,startAmbient,arm,click,pop,whoosh,get enabled(){return enabled;}};
 })();
 
 function toggleAudio(){
@@ -2136,11 +2202,18 @@ categories.forEach(c=>{
   filters.appendChild(b);
 });
 
+function logoAsset(p){
+  return `assets/logos/${p.id}.webp`;
+}
+
 function artwork(p,i){
   return `
-    <div class="art"></div>
-    <div class="artText">
-      ${p.category.toUpperCase()} / AF LOGIC
+    <div class="logo-stage">
+      <div class="logo-orbit"></div>
+      <img class="project-logo" src="${logoAsset(p)}" alt="${p.id} ${p.name}" loading="lazy" draggable="false">
+      <span class="logo-scan"></span>
+      <span class="logo-id">${p.id}</span>
+      <span class="logo-index">${String(i+1).padStart(2,"0")} / 60</span>
     </div>
   `;
 }
@@ -2205,6 +2278,8 @@ function openProject(n){
   const t=I18N[lang];
 
   document.getElementById("mId").textContent=p.id+" / "+p.category;
+  const mLogo=document.getElementById("mLogo");
+  mLogo.innerHTML=`<img src="${logoAsset(p)}" alt="${p.id} ${p.name}" draggable="false">`;
   document.getElementById("mTitle").textContent=p.name;
   document.getElementById("mDesc").textContent=p.description+" — "+t.note;
 
@@ -2233,6 +2308,11 @@ document.getElementById("modal").addEventListener("click",e=>{
 
 addEventListener("keydown",e=>{
   if(e.key==="Escape") closeModal()
+});
+
+// Start the selected ambient track on the first real user gesture.
+["pointerdown","keydown","wheel","touchstart"].forEach(type=>{
+  addEventListener(type,()=>AudioEngine.arm(),{once:true,passive:true});
 });
 
 /* touch device detection: swap scroll hints + hide custom cursor */
